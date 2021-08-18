@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Games', sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url(./assets/img/bg.jpg);
+    background-size: cover;
+}
+
+.personagem{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mario{
+    box-shadow: 0 0 100px 10px red;
+    border-radius: 20%;
+    width: 25%;
+    height: 40%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#mario:hover{
+    border-radius: 40%;
+}
+
+
+#sonic{
+    box-shadow: 0 0 100px 10px blue;
+    border-radius: 20%;
+    width: 25%;
+    height: 40%;
+    cursor: pointer;
+}
+#pikachu{
+    box-shadow: 0 0 100px 5px yellow;
+    border-radius: 20%;
+    width: 25%;
+    height: 40%;
+    cursor: pointer;
+}
+
+.imagem-personagem{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.escolher{
+    display: inline-block;
+    border-radius: 30%;
+    background-color: yellow;
+    margin-top: 5px;
+    padding: 5px 20px;
+    color: black;
+}
