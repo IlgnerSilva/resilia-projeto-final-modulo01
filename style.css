@@ -2,52 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Games', sans-serif;
+    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 .main{
     width: 100%;
     height: 100vh;
     text-align: center;
-    background-image: url(./assets/img/bg.jpg);
-    background-size: cover;
+}
+
+.sobre-o-jogo{
+    padding: 50px;
+}
+
+.sobre-o-jogo h1{
+    color: red;
+    padding-bottom: 20px;
+}
+
+.sobre-o-jogo p{
+    color: blue;
+    font-size: 25px;
 }
 
 .personagem{
     display: flex;
     width: 100%;
-    height: 80%;
+    height: 50%;
     justify-content: space-evenly;
     align-items: center;
+}
+.card-personagens{
+    border-radius: 20%;
+    cursor: pointer;
+    width: 25%;
+    height: 60%;
+    transition: 1s;
+}
+.card-personagens:hover{
+    border-radius: 40%;
 }
 
 #mario{
     box-shadow: 0 0 100px 10px red;
-    border-radius: 20%;
-    width: 25%;
-    height: 40%;
-    transition: 1s;
-    cursor: pointer;
 }
-
-#mario:hover{
-    border-radius: 40%;
-}
-
 
 #sonic{
-    box-shadow: 0 0 100px 10px blue;
-    border-radius: 20%;
-    width: 25%;
-    height: 40%;
-    cursor: pointer;
+    box-shadow: 0 0 100px 10px blue;  
 }
+
 #pikachu{
     box-shadow: 0 0 100px 5px yellow;
-    border-radius: 20%;
-    width: 25%;
-    height: 40%;
-    cursor: pointer;
 }
 
 .imagem-personagem{
@@ -62,4 +67,14 @@
     margin-top: 5px;
     padding: 5px 20px;
     color: black;
+}
+
+@media screen and (max-width: 720px){
+    .personagem{
+        flex-wrap: wrap;
+    }
+    .card-personagens{
+        width: 60%;
+        margin: 60px;
+    }
 }

@@ -38,7 +38,7 @@ function proximaFase(){
     let btnResponder = document.querySelector('#respoder1');
     let msgDaResposta = document.querySelector('#situacao-fase1');
     msgDaResposta.innerHTML = 'Ótima escolha, como todos sabemos os encanamentos do Mario não tem lógica nenhuma, ou seja, com certeza este encanamento vai dar exatamente onde a princesa está né :~)  Vá para a próxima fase!'
-    aProximaFase.style.display = ('none');
+    aProximaFase.style.display = ('inline-block');
     btnResponder.style.display = ('none');
 }
 
