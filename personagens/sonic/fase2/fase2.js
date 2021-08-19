@@ -13,6 +13,7 @@ function verificaSeONumeroE123 (num){
         return verificaSeENumero();
 
     }else if(num == 2){ 
+        alert('Parabéns você desbloqueou um Final alternativo, mas pode jogar de novo para ver outros finais possíveis.');
         return tentarNovamente()
 
     }else if(num == 3){      
@@ -29,8 +30,9 @@ function tentarNovamente(){
     let btnResponder = document.querySelector('#respoder1');
     let tentarNovamente = document.querySelector('#tentar-novamente');
     let msgDaResposta = document.querySelector('#situacao-fase1');
-    msgDaResposta.innerHTML = 'Sua escolha foi nobre, mas com esse gesto Sonic acaba ultrapassando Mario e salvando a princessa'
+    msgDaResposta.innerHTML = 'Sonic gostou tanto de ficar com o Pikachu que acaba desistindo de ir procura-la para ficar com seu novo amigo.'
     tentarNovamente.style.display = 'inline-block';
+    tentarNovamente.innerHTML = 'Jogar novamente'
     btnResponder.style.display = 'none';
     
 }
@@ -39,7 +41,7 @@ function proximaFase(){
     let aProximaFase = document.querySelector('#proxima-fase');
     let btnResponder = document.querySelector('#respoder1');
     let msgDaResposta = document.querySelector('#situacao-fase1');
-    msgDaResposta.innerHTML = 'Gênio, acredito que tenha feito essa escolha pois se lembrou de ter comido o cogumelo, com isso mesmo que tenha tomado um choque, você ainda tinha mais uma vida(chance). E por você ser um encanador gordinho, quando caiu em cima do Pikachu ele acabou desmaiando. Agora é só salvar a princesa.  Vá para a próxima fase!'
+    msgDaResposta.innerHTML = 'Exato, em todos os desafios que tiver durante sua jornada deve sempre dar o melhor de si. Não pare de correr. Vá para a próxima fase.'
     aProximaFase.style.display = ('inline-block');
     btnResponder.style.display = ('none');
 }
