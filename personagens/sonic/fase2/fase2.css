@@ -76,6 +76,7 @@
     font-size: 20px;
     color: red;
     background-color:rgb(17, 0, 255);
+    margin-bottom: 20px;
 }
 
 #tentar-novamente{
@@ -84,6 +85,7 @@
     font-size: 20px;
     color: red;
     background-color:rgb(17, 0, 255);
+    margin: 20px;
 }
 
 #proxima-fase{
@@ -92,4 +94,20 @@
     font-size: 20px;
     color: red;
     background-color:rgb(17, 0, 255);
+    margin: 20px;
+}
+
+@media screen and (max-width: 720px){
+    .escolhas{
+        flex-wrap: wrap;
+    }
+    .card-escolha{
+        width: 60%;
+        margin: 60px;
+    }
+    .sobre-a-fase p{
+        padding: 20px;
+        background-color: black;
+        
+    }
 }
